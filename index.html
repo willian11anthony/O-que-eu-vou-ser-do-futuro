@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cartas ao Tempo — Meu Projeto de Vida</title>
+
+  <!-- Fontes: Gótica clássica, máquina de escrever (zine) e leitura literária -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fundo animado (Névoa & Cinzas / Chuva Noturna) -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Camadas de textura grunge, ruído analógico e vinheta -->
+  <div class="textura-grunge" aria-hidden="true"></div>
+  <div class="luz-sombria" aria-hidden="true"></div>
+  <div class="vinheta" aria-hidden="true"></div>
+
+  <!-- Barra superior -->
+  <header class="top-bar">
+    <span class="codigo-arquivo">Arquivo para meu futuro</span>
+
+    <div class="controles">
+      <button id="btn-clima" class="btn-controle" title="Alternar animação do fundo">
+        ☠ Fundo: Claro
+      </button>
+      <button id="btn-tema" class="btn-controle" title="Alternar estilo de papel">
+        ◐ Modo Escuro
+      </button>
+    </div>
+  </header>
+
+  <!-- Capa / Introdução -->
+  <section class="hero">
+    <div class="capa-carta">
+      <span class="canto-cruz topo-esq" aria-hidden="true">+</span>
+      <span class="canto-cruz topo-dir" aria-hidden="true">+</span>
+      <span class="canto-cruz base-esq" aria-hidden="true">+</span>
+      <span class="canto-cruz base-dir" aria-hidden="true">+</span>
+
+      <p class="etiqueta-tempo">[ REGISTRO PESSOAL ]</p>
+      <h1>Cartas ao Tempo</h1>
+      <p class="epigrafe">
+        “Um retrato escrito para meu "eu" do futuro.”
+      </p>
+      <div class="ornamento">⸸</div>
+    </div>
+
+    <!-- Navegação por fases -->
+    <nav class="timeline-nav" aria-label="Fases da vida">
+      <a href="#fase-18" class="nav-link ativo">18 Anos</a>
+      <a href="#fase-25" class="nav-link">25 Anos</a>
+      <a href="#fase-30" class="nav-link">30–35 Anos</a>
+      <a href="#fase-40" class="nav-link">40 Anos</a>
+      <a href="#fase-50" class="nav-link">50–60 Anos</a>
+    </nav>
+  </section>
+
+  <!-- Linha do Tempo -->
+  <main class="container">
+
+    <!-- FASE 1: 18 ANOS -->
+    <article id="fase-18" class="capitulo reveal">
+      <div class="capitulo-topo">
+        <span class="numero-frame">ATO I</span>
+        <span class="badge-idade">Aos 18 Anos</span>
+      </div>
+
+      <div class="cartao-texto">
+        <h2>inicio</h2>
+        <p>
+          A partir dos meus 18 anos, pretendo focar nos estudos para uma vestibular se eu passar no ENEM,
+          com o objetivo de entrar na faculdade e cuidar da minha saúde frequentando uma academia.
+          Tenho interesse em cursar <strong>Psicologia</strong>, <strong>Artes Visuais</strong>
+          e, se possível, <strong>Filosofia</strong>, além de me aprofundar em edição de foto,
+          vídeo e nos meus interesses nerds.
+        </p>
+        <p>
+          Nessa fase, também quero buscar um trabalho de meio período em Irati e tentar tirar
+          minha carteira de motorista. Paralelamente, planejo monetizar minhas edições e fechar
+          parcerias no Instagram e no TikTok, sem deixar de lado minhas poesias quero que a
+          minha arte toque profundamente o coração, o pensamento e a alma das pessoas que
+          decidirem conhecê-la.
+        </p>
+
+        
+    </article>
+
+    <!-- FASE 2: 25 ANOS -->
+    <article id="fase-25" class="capitulo reveal">
+      <div class="capitulo-topo">
+        <span class="numero-frame">ATO II</span>
+        <span class="badge-idade">Aos 25 Anos</span>
+      </div>
+
+      <div class="cartao-texto">
+        <h2>Apronfundamento nos meus gostos pessoais</h2>
+        <p>
+          Aos 25 anos, quero já estar formado e atuando como psicólogo, mantendo também um
+          segundo trabalho mais flexível, de pelo menos cinco horas, como uma renda extra.
+          Meu objetivo é conquistar independência para morar sozinho em uma casa ou apartamento,
+          ou até mesmo dividir os custos morando com a minha mãe em outra cidade.
+        </p>
+        <p>
+          Nessa época, quero investir mais na fotografia talvez comprando uma câmera profissional,
+          aprimorar meus conhecimentos em edição de vídeo e aprender a tocar ukulelê e guitarra
+          para tentar compor minhas próprias músicas. Com a vida mais estabilizada, estarei aberto
+          a um relacionamento com alguém que some comigo, para que possamos aprender, trabalhar,
+          cuidar um do outro e construir um futuro juntos.
+        </p>
+
+        
+    </article>
+
+    <!-- FASE 3: 30 E 35 ANOS -->
+    <article id="fase-30" class="capitulo reveal">
+      <div class="capitulo-topo">
+        <span class="numero-frame">ATO III</span>
+        <span class="badge-idade">Dos 30 aos 35 Anos</span>
+      </div>
+
+      <div class="cartao-texto">
+        <h2>Companhia</h2>
+        <p>
+          Chegando aos 30 anos, pretendo mergulhar ainda mais na fotografia, nas artes visuais,
+          na videografia e na filosofia, além de consolidar meus atendimentos online como psicólogo.
+        </p>
+        <p>
+          Por volta dos 35, desejo me casar e construir minha própria família, tendo dois filhos
+          um menino e uma menina, embora o gênero não importe, dedicando-me principalmente a
+          cuidar bem deles.
+        </p>
+
+        
+    </article>
+
+    <!-- FASE 4: 40 ANOS -->
+    <article id="fase-40" class="capitulo reveal">
+      <div class="capitulo-topo">
+        <span class="numero-frame">ATO IV</span>
+        <span class="badge-idade">Aos 40 Anos</span>
+      </div>
+
+      <div class="cartao-texto">
+        <h2>Compartilhar</h2>
+        <p>
+          Aos 40 anos, quero direcionar ainda mais energia para as artes e, quem sabe, me tornar
+          professor para ensinar especialmente os meus filhos. Também me vejo atuando como
+          criador de conteúdo digital, misturando filosofia, arte e meus gostos nerds.
+        </p>
+        <p>
+          Na psicologia, quero expandir meu atendimento para áreas diversificadas, acolhendo
+          pacientes com deficiências, problemas mentais e outras questões psicológicas, mas
+          sempre garantindo bastante tempo livre para aproveitar ao lado dos meus filhos.
+        </p>
+
+        
+    </article>
+
+    <!-- FASE 5: 50 E 60 ANOS -->
+    <article id="fase-50" class="capitulo reveal">
+      <div class="capitulo-topo">
+        <span class="numero-frame">ATO V</span>
+        <span class="badge-idade">Dos 50 aos 60 Anos</span>
+      </div>
+
+      <div class="cartao-texto">
+        <h2>Descanso</h2>
+        <p>
+          Por volta dos 50 anos no mínimo, desejo me aposentar por escolha própria para ter a
+          liberdade de continuar aprendendo, explorando coisas novas e apoiando minha família.
+        </p>
+        <p>
+          Já aos 60 anos, por considerar uma idade muito avançada para mim, imagino uma rotina
+          tranquila e sem esforço físico, aproveitando a companhia de quem cuida de mim e curtindo
+          a vida ao máximo enquanto brinco, ensino e cuido dos meus netos.
+        </p>
+
+        
+    </article>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p class="citacao-rodape">Provavelmente não terei uma vida tão longa assim</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
